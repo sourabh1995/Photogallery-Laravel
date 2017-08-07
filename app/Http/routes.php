@@ -15,6 +15,6 @@ Route::get('/', 'GalleryController@index' );
 Route::get('/create', 'GalleryController@create');
 Route::post('/store', ['uses'=>'GalleryController@store']);
 Route::resource('/gallery/index', 'GalleryController@index');
-
+Route::resource('/gallery/show/{id}', 'GalleryController@show');
 
 

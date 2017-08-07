@@ -47,4 +47,8 @@ class GalleryController extends Controller
         return redirect('/')->with('message','Photo Uploaded');
         //return view('gallery/index');
     }
+    public function show()
+    {
+        # code...
+    }
 }
